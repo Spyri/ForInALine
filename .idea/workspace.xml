@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created Classes for creating a For In A Line Game">
-      <change afterPath="$PROJECT_DIR$/src/ForInALineBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created Classes for creating a For In A Line Game (2)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GamePieces/BlankPiece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GamePieces/Piece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ForInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ForInLineGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/BoardManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ForInALineBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ForInALineBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ForInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/ForInLineGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePieces/GamePiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679049509303</updated>
       <workItem from="1679049509475" duration="1457000" />
-      <workItem from="1679051165616" duration="1032000" />
+      <workItem from="1679051165616" duration="1800000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -66,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679050849392</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created Classes for creating a For In A Line Game (2)">
+      <created>1679052232958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679052232958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Classes for creating a For In A Line Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Classes for creating a For In A Line Game" />
+    <MESSAGE value="Created Classes for creating a For In A Line Game (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Classes for creating a For In A Line Game (2)" />
   </component>
 </project>

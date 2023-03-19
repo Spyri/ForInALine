@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Added a PlayerList and a PlayersManager to the FIALGame">
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Implemented change player function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/FourInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FourInLineGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
       <updated>1679049509303</updated>
       <workItem from="1679049509475" duration="1457000" />
       <workItem from="1679051165616" duration="1800000" />
-      <workItem from="1679239843221" duration="14452000" />
+      <workItem from="1679239843221" duration="16337000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -150,7 +152,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679255453219</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed an issue that made impossible to choose a Symbol.">
+      <created>1679256165292</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679256165292</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactored the Game class. Initialize method were utilized.">
+      <created>1679256202949</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679256202949</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implemented change player function">
+      <created>1679256546699</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679256546699</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,17 +192,9 @@
     <MESSAGE value="Created PlayerList that creates 2 humanPlayers for a FIAL game. The creation also asks the user for his name and char he wants to use." />
     <MESSAGE value="Created a PlayersManager that manages the players of a FIAL game." />
     <MESSAGE value="Added a PlayerList and a PlayersManager to the FIALGame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a PlayerList and a PlayersManager to the FIALGame" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Game/FIALPlayersList.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fixed an issue that made impossible to choose a Symbol." />
+    <MESSAGE value="Refactored the Game class. Initialize method were utilized." />
+    <MESSAGE value="Implemented change player function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented change player function" />
   </component>
 </project>

@@ -8,18 +8,15 @@ public class FourInLineGame implements Game {
     public FIALPlayersList playersList;
     public FIALPlayersManager playersManager;
     public FourInLineGame(int columns, int rows) {
+        initializeGame(columns, rows);
+    }
+
+    @Override
+    public void initializeGame(int columns, int rows) {
         this.board = new FourInALineBoard(columns, rows, ' ');
         this.boardManager = new BoardManager(this.board);
         this.playersList = new FIALPlayersList();
         this.playersManager = new FIALPlayersManager(playersList);
-
-
-    }
-
-    @Override
-    public void initializeGame() {
-
-
     }
 
     @Override

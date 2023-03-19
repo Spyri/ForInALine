@@ -6,7 +6,7 @@ import Board.*;
 public interface Game {
     public Board board = null;
 
-    public void initializeGame();
+    void initializeGame(int columns, int rows);
 
     public void startGame();
 

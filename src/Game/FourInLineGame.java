@@ -22,11 +22,11 @@ public class FourInLineGame implements Game {
     @Override
     public void startGame() {
         this.boardManager.clearBoard();
-        this.boardManager.drawBoard();
-        for (int i = 0; i < 8; i++) {
-            this.boardManager.setPieceAt('G', 1);
             this.boardManager.drawBoard();
+        while (true) {
+            this.playersManager.executeCurrentPlayerMove();
+            this.boardManager.drawBoard();
+            this.playersManager.changePlayer();
         }
-        this.playersManager.executeCurrentPlayerMove();
     }
 }

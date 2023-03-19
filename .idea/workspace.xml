@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Implemented change player function">
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Added BoardManager attribute to the player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/FourInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FourInLineGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
       <updated>1679049509303</updated>
       <workItem from="1679049509475" duration="1457000" />
       <workItem from="1679051165616" duration="1800000" />
-      <workItem from="1679239843221" duration="16337000" />
+      <workItem from="1679239843221" duration="18874000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -173,7 +170,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679256546699</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added the boardmanager of the FIAL to the Playerslist">
+      <created>1679258490466</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679258490466</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added executeCurrentPlayerMove method that executes the current Players move">
+      <created>1679258548716</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679258548716</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactoring">
+      <created>1679258622383</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679258622383</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added BoardManager attribute to the player">
+      <created>1679258655391</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679258655391</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +220,10 @@
     <MESSAGE value="Fixed an issue that made impossible to choose a Symbol." />
     <MESSAGE value="Refactored the Game class. Initialize method were utilized." />
     <MESSAGE value="Implemented change player function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented change player function" />
+    <MESSAGE value="Added the boardmanager of the FIAL to the Playerslist" />
+    <MESSAGE value="Added executeCurrentPlayerMove method that executes the current Players move" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="Added BoardManager attribute to the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BoardManager attribute to the player" />
   </component>
 </project>

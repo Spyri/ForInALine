@@ -15,7 +15,7 @@ public class FourInLineGame implements Game {
     public void initializeGame(int columns, int rows) {
         this.board = new FourInALineBoard(columns, rows, ' ');
         this.boardManager = new BoardManager(this.board);
-        this.playersList = new FIALPlayersList();
+        this.playersList = new FIALPlayersList(this.boardManager);
         this.playersManager = new FIALPlayersManager(playersList);
     }
 
@@ -27,5 +27,6 @@ public class FourInLineGame implements Game {
             this.boardManager.setPieceAt('G', 1);
             this.boardManager.drawBoard();
         }
+        this.playersManager.executeCurrentPlayerMove();
     }
 }

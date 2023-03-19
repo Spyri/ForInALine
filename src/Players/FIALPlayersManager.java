@@ -13,7 +13,9 @@ public class FIALPlayersManager {
         currentPlayer = players.players[round];
     }
 
-
+    public void executeCurrentPlayerMove() {
+        currentPlayer.executeMove();
+    }
 
     public void changePlayer() {
         round++;

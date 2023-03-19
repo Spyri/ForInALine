@@ -1,5 +1,6 @@
 package Game;
 
+import Board.BoardManager;
 import Players.HumanPlayerFIAL;
 import Players.Player;
 
@@ -10,7 +11,10 @@ public class FIALPlayersList {
     public Player[] players;
     private char alreadyChosenSymbol;
 
-    public FIALPlayersList() {
+    private BoardManager boardManager;
+
+    public FIALPlayersList(BoardManager boardManager) {
+        this.boardManager = boardManager;
         System.out.println("--- Player 1: Please type in your name and the symbol that you want to use. ---");
         Player player1 = createHumanPlayer();
         System.out.println("--- Player 2: Please type in your name and the symbol that you want to use. ---");
@@ -34,7 +38,7 @@ public class FIALPlayersList {
                 }
                 if (this.alreadyChosenSymbol != chosenChar) {
                     this.alreadyChosenSymbol = chosenChar;
-                    return new HumanPlayerFIAL(name, chosenChar);
+                    return new HumanPlayerFIAL(name, chosenChar, this.boardManager);
                 }
                 else {
                     System.out.println("This Symbol is already taken. Try again.");

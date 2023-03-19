@@ -1,12 +1,19 @@
 package Game;
 import Board.*;
+import Players.FIALPlayersManager;
 
 public class FourInLineGame implements Game {
     public Board board;
-    public BoardManager manager;
+    public BoardManager boardManager;
+    public FIALPlayersList playersList;
+    public FIALPlayersManager playersManager;
     public FourInLineGame(int columns, int rows) {
         this.board = new FourInALineBoard(columns, rows, ' ');
-        this.manager = new BoardManager(this.board);
+        this.boardManager = new BoardManager(this.board);
+        this.playersList = new FIALPlayersList();
+        this.playersManager = new FIALPlayersManager(playersList);
+
+
     }
 
     @Override
@@ -17,11 +24,11 @@ public class FourInLineGame implements Game {
 
     @Override
     public void startGame() {
-        this.manager.clearBoard();
-        this.manager.drawBoard();
+        this.boardManager.clearBoard();
+        this.boardManager.drawBoard();
         for (int i = 0; i < 8; i++) {
-            this.manager.setPieceAt('G', 1);
-            this.manager.drawBoard();
+            this.boardManager.setPieceAt('G', 1);
+            this.boardManager.drawBoard();
         }
     }
 }

@@ -1,8 +1,10 @@
 package Game;
 
-import jdk.jshell.spi.ExecutionControl.NotImplementedException;
+
+import Board.*;
 
 public interface Game {
+    public Board board = null;
 
     public void initializeGame();
 

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods.">
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Refactored view and PlayersManager saves last row used.">
+      <change afterPath="$PROJECT_DIR$/src/Board/CheckWinFIAL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/BoardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/BoardManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/FourInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FourInLineGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <workItem from="1679049509475" duration="1457000" />
       <workItem from="1679051165616" duration="1800000" />
       <workItem from="1679239843221" duration="19455000" />
-      <workItem from="1679337134205" duration="4415000" />
+      <workItem from="1679337134205" duration="14259000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679340923103</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Refactored view and PlayersManager saves last row used.">
+      <created>1679341921747</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679341921747</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +269,22 @@
     <MESSAGE value="Implemented execution of the HumanPlayer" />
     <MESSAGE value="Created the Game Logic without win check" />
     <MESSAGE value="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods." />
+    <MESSAGE value="Refactored view and PlayersManager saves last row used." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored view and PlayersManager saves last row used." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Board/CheckWinFIAL.java</url>
+          <line>107</line>
+          <properties class="Board.CheckWinFIAL" method="checkDiagonalDecreasing">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

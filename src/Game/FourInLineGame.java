@@ -1,5 +1,6 @@
 package Game;
 import Board.*;
+import IO.InputOutput;
 import Players.FIALPlayersManager;
 
 public class FourInLineGame implements Game {
@@ -26,7 +27,11 @@ public class FourInLineGame implements Game {
         while (true) {
             this.playersManager.executeCurrentPlayerMove();
             this.boardManager.drawBoard();
+            if (this.playersManager.gameWon) {
+                break;
+            }
             this.playersManager.changePlayer();
         }
+        InputOutput.println(playersManager.currentPlayer.getName() + " won!");
     }
 }

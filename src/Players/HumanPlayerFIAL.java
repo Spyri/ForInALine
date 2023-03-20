@@ -24,6 +24,6 @@ public class HumanPlayerFIAL extends Player{
             row = InputOutput.printAndScanInt(message);
             validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
         }
-        return row;
+        return row - 1;
     }
 }

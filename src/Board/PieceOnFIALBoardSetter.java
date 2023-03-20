@@ -1,5 +1,7 @@
 package Board;
 
+import IO.InputOutput;
+
 public class PieceOnFIALBoardSetter {
     private final Board board;
     public PieceOnFIALBoardSetter(Board board) {
@@ -13,12 +15,12 @@ public class PieceOnFIALBoardSetter {
                 return true;
             }
             else {
-                System.out.println("The given row is full with pieces. Try again");
+                InputOutput.println("The given row is full with pieces. Try again");
                 return false;
             }
         }
         else {
-            System.out.println("The given row is out of bounds. Try again.");
+            InputOutput.println("The given row is out of bounds. Try again.");
             return false;
         }
     }

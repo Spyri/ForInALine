@@ -1,6 +1,7 @@
 package Players;
 
 import Board.BoardManager;
+import IO.InputOutput;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -16,26 +17,12 @@ public class HumanPlayerFIAL extends Player{
     @Override
     public void executeMove() {
         System.out.println("--- Player " + this.name + " is playing ---");
-        Scanner scanner = new Scanner(System.in);
         boolean validInput = false;
-        int row = 0;
+        int row;
         while (!validInput){
-            System.out.print("Please choose the row you want to place your stone: ");
-            try {
-                scanner.reset();
-                row = scanner.nextInt();
-            }
-            catch (InputMismatchException e) {
-                System.out.println("Input invalid. Try again.");
-                scanner.next();
-                continue;
-            }
-            if (this.boardManager.setPieceAt(this.pieceSymbol, row)) {
-                validInput = true;
-            }
-            else {
-                validInput = false;
-            }
+            String message = "Please choose the row you want to place your stone: ";
+            row = InputOutput.printAndScanInt(message);
+            validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
         }
     }
 }

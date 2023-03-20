@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created the Game Logic without win check">
-      <change afterPath="$PROJECT_DIR$/src/IO/InputOutput.java" afterDir="false" />
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/BoardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/BoardManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
@@ -62,7 +60,7 @@
       <workItem from="1679049509475" duration="1457000" />
       <workItem from="1679051165616" duration="1800000" />
       <workItem from="1679239843221" duration="19455000" />
-      <workItem from="1679337134205" duration="3646000" />
+      <workItem from="1679337134205" duration="4415000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679260542798</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods.">
+      <created>1679340923103</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679340923103</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +262,7 @@
     <MESSAGE value="Added BoardManager attribute to the player" />
     <MESSAGE value="Implemented execution of the HumanPlayer" />
     <MESSAGE value="Created the Game Logic without win check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Game Logic without win check" />
+    <MESSAGE value="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods." />
   </component>
 </project>

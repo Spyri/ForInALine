@@ -15,14 +15,15 @@ public class HumanPlayerFIAL extends Player{
 
 
     @Override
-    public void executeMove() {
+    public int executeMove() {
         System.out.println("--- Player " + this.name + " is playing ---");
         boolean validInput = false;
-        int row;
+        int row = -1;
         while (!validInput){
             String message = "Please choose the row you want to place your stone: ";
             row = InputOutput.printAndScanInt(message);
             validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
         }
+        return row;
     }
 }

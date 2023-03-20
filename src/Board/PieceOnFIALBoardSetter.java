@@ -9,7 +9,8 @@ public class PieceOnFIALBoardSetter {
     }
 
     public boolean setPieceAt(char p, int row) {
-        if((row < this.board.maxRow) && (row >=0)) {
+        --row;
+        if((row < this.board.maxRow) && (row >= 0)) {
             if (isRowFree(row)) {
                 this.board.setPieceAt(p, this.getNextFreeColumnOfRow(row), row);
                 return true;

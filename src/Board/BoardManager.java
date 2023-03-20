@@ -2,7 +2,7 @@ package Board;
 
 public class BoardManager {
     public Board board;
-    private PieceOnFIALBoardSetter pieceSetter;
+    private final PieceOnFIALBoardSetter pieceSetter;
 
     public BoardManager(Board board) {
         this.board = board;
@@ -29,7 +29,7 @@ public class BoardManager {
             System.out.print('-');
         }
         System.out.println();
-        for (int row = 0; row < this.board.maxRow; row++) {
+        for (int row = 1; row <= this.board.maxRow; row++) {
             System.out.print(" " + row) ;
         }
         System.out.println("\n");

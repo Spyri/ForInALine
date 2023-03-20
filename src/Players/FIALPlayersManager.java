@@ -6,6 +6,7 @@ public class FIALPlayersManager {
     private final FIALPlayersList players;
     public Player currentPlayer;
     public int round;
+    public int lastRow;
 
     public FIALPlayersManager(FIALPlayersList players) {
         this.players = players;
@@ -14,7 +15,7 @@ public class FIALPlayersManager {
     }
 
     public void executeCurrentPlayerMove() {
-        currentPlayer.executeMove();
+        this.lastRow = currentPlayer.executeMove();
     }
 
     public void changePlayer() {

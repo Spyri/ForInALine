@@ -14,5 +14,5 @@ public abstract class Player {
         return name;
     }
 
-    public abstract void executeMove();
+    public abstract int executeMove();
 }

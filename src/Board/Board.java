@@ -22,4 +22,8 @@ public abstract class Board {
             }
         }
     }
+
+    public int getAreaOfBoard() {
+        return this.maxColumn*this.maxRow;
+    }
 }

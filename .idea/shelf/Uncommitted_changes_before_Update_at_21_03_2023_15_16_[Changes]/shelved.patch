@@ -1,0 +1,113 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Game.FourInLineGame;\r\n\r\npublic class Main {\r\n    public static void main (String[] args) {\r\n        FourInLineGame game = new FourInLineGame(7,6);\r\n        game.startGame();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 7373088a502dbd1a04b70f45118f10759fb9afa3)
++++ b/src/Main.java	(date 1679317949300)
+@@ -2,7 +2,7 @@
+ 
+ public class Main {
+     public static void main (String[] args) {
+-        FourInLineGame game = new FourInLineGame(7,6);
++        FourInLineGame game = new FourInLineGame(6,7);
+         game.startGame();
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a03b8bc3-f66a-445e-be65-34380e43dc5a\" name=\"Changes\" comment=\"Added BoardManager attribute to the player\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Game/FourInLineGame.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Game/FourInLineGame.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2N8dB27t6DfZjQlU6SjBFQVYXnL\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a03b8bc3-f66a-445e-be65-34380e43dc5a\" name=\"Changes\" comment=\"\" />\r\n      <created>1679049509303</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1679049509303</updated>\r\n      <workItem from=\"1679049509475\" duration=\"1457000\" />\r\n      <workItem from=\"1679051165616\" duration=\"1800000\" />\r\n      <workItem from=\"1679239843221\" duration=\"18874000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Created Classes for creating a For In A Line Game\">\r\n      <created>1679050849392</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679050849392</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Created Classes for creating a For In A Line Game (2)\">\r\n      <created>1679052232958</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679052232958</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Created functions to set Pieces on a generic board. This methods should be called by an input validation class. Also created a clearBoard function.\">\r\n      <created>1679252765511</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679252765511</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Removed Pieces Classes and renamed some Classes\">\r\n      <created>1679252923951</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679252923951</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Created a PieceSetter for a FIAL game\">\r\n      <created>1679252977727</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679252977727</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Created A HumanPlayer class\">\r\n      <created>1679253009976</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679253009976</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Boardmanager got refactored. Also draws the board on the console\">\r\n      <created>1679253060333</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679253060333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Generic Game and Player Class\">\r\n      <created>1679253104854</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679253104854</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Main Class that starts the game\">\r\n      <created>1679253122540</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679253122540</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Created PlayerList that creates 2 humanPlayers for a FIAL game. The creation also asks the user for his name and char he wants to use.\">\r\n      <created>1679255355795</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679255355795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Created a PlayersManager that manages the players of a FIAL game.\">\r\n      <created>1679255406788</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679255406788</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Added a PlayerList and a PlayersManager to the FIALGame\">\r\n      <created>1679255443911</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679255443911</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Added a PlayerList and a PlayersManager to the FIALGame\">\r\n      <created>1679255453219</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679255453219</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Fixed an issue that made impossible to choose a Symbol.\">\r\n      <created>1679256165292</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679256165292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Refactored the Game class. Initialize method were utilized.\">\r\n      <created>1679256202949</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679256202949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Implemented change player function\">\r\n      <created>1679256546699</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679256546699</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Added the boardmanager of the FIAL to the Playerslist\">\r\n      <created>1679258490466</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679258490466</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Added executeCurrentPlayerMove method that executes the current Players move\">\r\n      <created>1679258548716</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679258548716</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Refactoring\">\r\n      <created>1679258622383</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679258622383</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Added BoardManager attribute to the player\">\r\n      <created>1679258655391</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679258655391</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"21\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Created Classes for creating a For In A Line Game\" />\r\n    <MESSAGE value=\"Created Classes for creating a For In A Line Game (2)\" />\r\n    <MESSAGE value=\"Created functions to set Pieces on a generic board. This methods should be called by an input validation class. Also created a clearBoard function.\" />\r\n    <MESSAGE value=\"Removed Pieces Classes and renamed some Classes\" />\r\n    <MESSAGE value=\"Created a PieceSetter for a FIAL game\" />\r\n    <MESSAGE value=\"Created A HumanPlayer class\" />\r\n    <MESSAGE value=\"Boardmanager got refactored. Also draws the board on the console\" />\r\n    <MESSAGE value=\"Generic Game and Player Class\" />\r\n    <MESSAGE value=\"Main Class that starts the game\" />\r\n    <MESSAGE value=\"Created PlayerList that creates 2 humanPlayers for a FIAL game. The creation also asks the user for his name and char he wants to use.\" />\r\n    <MESSAGE value=\"Created a PlayersManager that manages the players of a FIAL game.\" />\r\n    <MESSAGE value=\"Added a PlayerList and a PlayersManager to the FIALGame\" />\r\n    <MESSAGE value=\"Fixed an issue that made impossible to choose a Symbol.\" />\r\n    <MESSAGE value=\"Refactored the Game class. Initialize method were utilized.\" />\r\n    <MESSAGE value=\"Implemented change player function\" />\r\n    <MESSAGE value=\"Added the boardmanager of the FIAL to the Playerslist\" />\r\n    <MESSAGE value=\"Added executeCurrentPlayerMove method that executes the current Players move\" />\r\n    <MESSAGE value=\"Refactoring\" />\r\n    <MESSAGE value=\"Added BoardManager attribute to the player\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added BoardManager attribute to the player\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7373088a502dbd1a04b70f45118f10759fb9afa3)
++++ b/.idea/workspace.xml	(date 1679318030339)
+@@ -4,10 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Added BoardManager attribute to the player">
++    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Refactored directory structure">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Game/FourInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FourInLineGame.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,6 +22,19 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="562cc77b-6f26-47dd-bcc5-244cec724626" />
++        <option name="url" value="https://github.com/Spyri/ForInALine.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -43,9 +55,24 @@
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RunManager">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Main" />
++      <module name="Assignment1" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -57,6 +84,7 @@
+       <workItem from="1679049509475" duration="1457000" />
+       <workItem from="1679051165616" duration="1800000" />
+       <workItem from="1679239843221" duration="18874000" />
++      <workItem from="1679317828124" duration="201000" />
+     </task>
+     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
+       <created>1679050849392</created>
+@@ -203,6 +231,17 @@
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Created Classes for creating a For In A Line Game" />

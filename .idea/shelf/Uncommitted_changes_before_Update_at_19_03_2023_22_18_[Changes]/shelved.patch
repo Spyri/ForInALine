@@ -1,0 +1,68 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a03b8bc3-f66a-445e-be65-34380e43dc5a\" name=\"Changes\" comment=\"Created Classes for creating a For In A Line Game (2)\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Board/Board.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/GamePieces/BlankPiece.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/GamePieces/Piece.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Players/Player.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Board.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/BoardManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Board/BoardManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ForInALineBoard.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Board/ForInALineBoard.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ForInLineGame.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Game/ForInLineGame.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Game.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Game/Game.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/GamePiece.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/GamePieces/GamePiece.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Player.java\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2N8dB27t6DfZjQlU6SjBFQVYXnL\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a03b8bc3-f66a-445e-be65-34380e43dc5a\" name=\"Changes\" comment=\"\" />\r\n      <created>1679049509303</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1679049509303</updated>\r\n      <workItem from=\"1679049509475\" duration=\"1457000\" />\r\n      <workItem from=\"1679051165616\" duration=\"1800000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Created Classes for creating a For In A Line Game\">\r\n      <created>1679050849392</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679050849392</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Created Classes for creating a For In A Line Game (2)\">\r\n      <created>1679052232958</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679052232958</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Created Classes for creating a For In A Line Game\" />\r\n    <MESSAGE value=\"Created Classes for creating a For In A Line Game (2)\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Created Classes for creating a For In A Line Game (2)\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 17903778249530497f2fe9e465c2893dbadfb9b9)
++++ b/.idea/workspace.xml	(date 1679054407516)
+@@ -4,21 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Created Classes for creating a For In A Line Game (2)">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Board/Board.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/GamePieces/BlankPiece.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/GamePieces/Piece.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Players/Player.java" afterDir="false" />
++    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Refactored directory structure">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/BoardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/BoardManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ForInALineBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/ForInALineBoard.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ForInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/ForInLineGame.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/GamePiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePieces/GamePiece.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -66,7 +53,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1679049509303</updated>
+       <workItem from="1679049509475" duration="1457000" />
+-      <workItem from="1679051165616" duration="1800000" />
++      <workItem from="1679051165616" duration="3001000" />
+     </task>
+     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
+       <created>1679050849392</created>
+@@ -82,7 +69,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1679052232958</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Refactored directory structure">
++      <created>1679053241189</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1679053241189</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -91,6 +85,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Created Classes for creating a For In A Line Game" />
+     <MESSAGE value="Created Classes for creating a For In A Line Game (2)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Created Classes for creating a For In A Line Game (2)" />
++    <MESSAGE value="Refactored directory structure" />
++    <option name="LAST_COMMIT_MESSAGE" value="Refactored directory structure" />
+   </component>
+ </project>
+\ No newline at end of file

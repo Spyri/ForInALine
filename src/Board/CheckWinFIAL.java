@@ -24,116 +24,172 @@ public class CheckWinFIAL {
         return this.board.maxColumn - 1;
     }
     private boolean checkHorizontal(int column, int row, char symbol) {
-        int same = 1;
+        int rightSameSymbol = 0;
+        boolean left = false;
         int rowWithOffset;
         for (int offset = 1; offset < 4; offset++) {
-            rowWithOffset = row + offset;
-            if (rowWithOffset > this.board.maxRow - 1) {
-                rowWithOffset -= 2*offset;
-                if (this.board.getPieceAt(column, rowWithOffset) == symbol) {
-                    same++;
+            if (left) {
+                rowWithOffset = row - offset + rightSameSymbol;
+                if (checkNotInBounds(column, rowWithOffset)) {
+                    return false;
                 }
-                else return false;
             }
-            if (this.board.getPieceAt(column, rowWithOffset) == symbol) {
-                same++;
+            else  {
+                rowWithOffset = row + offset;
+                if (checkNotInBounds(column, rowWithOffset)) {
+                    left = true;
+                    rowWithOffset = row - offset + rightSameSymbol;
+                }
             }
-            else {
-                rowWithOffset-= 2*offset;
-                if (rowWithOffset < 0) return false;
-                if (this.board.getPieceAt(column, rowWithOffset) == symbol) {
-                    same++;}
+            if (isSameSymbol(column, rowWithOffset, symbol)) {
+                if (!left) {
+                    rightSameSymbol++;
+                }
+            } else {
+                left = true;
+                rowWithOffset = row - offset + rightSameSymbol;
+                if (checkNotInBounds(column, rowWithOffset)) {
+                    return false;
+                }
+                if (!isSameSymbol(column, rowWithOffset, symbol)) {
+                    return false;
+                }
             }
         }
-        return same == 4;
+        return true;
     }
 
     private boolean checkVertical(int column, int row, char symbol) {
-        int same = 1;
+        int downSameSymbol = 0;
+        boolean up = false;
         int columnWithOffset;
         for (int offset = 1; offset < 4; offset++) {
-            columnWithOffset = column + offset;
-            if (columnWithOffset > this.board.maxColumn - 1) {
-                columnWithOffset -= 2 * offset;
-                if (this.board.getPieceAt(columnWithOffset, row) == symbol) {
-                    same++;
+            if (up) {
+                columnWithOffset = column - offset + downSameSymbol;
+                if (checkNotInBounds(columnWithOffset, row)) {
+                    return false;
                 }
-                else return false;
             }
-            if (this.board.getPieceAt(columnWithOffset, row) == symbol) {
-                same++;
+            else  {
+                columnWithOffset = column + offset;
+                if (checkNotInBounds(columnWithOffset, row)) {
+                    up = true;
+                    columnWithOffset = column - offset + downSameSymbol;
+                }
             }
-            else {
-                columnWithOffset -= 2*offset;
-                if (columnWithOffset < 0) return false;
-                if (this.board.getPieceAt(columnWithOffset, row) == symbol) {
-                    same++;
+            if (isSameSymbol(columnWithOffset, row, symbol)) {
+                if (!up) {
+                    downSameSymbol++;
+                }
+            } else {
+                up = true;
+                columnWithOffset = column - offset + downSameSymbol;
+                if (checkNotInBounds(columnWithOffset, row)) {
+                    return false;
+                }
+                if (!isSameSymbol(columnWithOffset, row, symbol)) {
+                    return false;
                 }
             }
         }
-        return same == 4;
+        return true;
     }
 
+
+
     private boolean checkDiagonalIncreasing(int column, int row, char symbol) {
-        int same = 1;
-        int columnWithOffset, rowWithOffset;
+        int upSameSymbol = 0;
+        boolean down = false;
+        int columnWithOffset;
+        int rowWithOffset;
         for (int offset = 1; offset < 4; offset++) {
-            columnWithOffset = column - offset;
-            rowWithOffset = row + offset;
-            if (columnWithOffset < 0 || rowWithOffset > board.maxRow -1) {
-                columnWithOffset += 2*offset;
-                rowWithOffset -= 2*offset;
-                if (columnWithOffset > board.maxColumn - 1|| rowWithOffset < 0) return false;
-                if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                    same++;
-                    continue;
+            if (down) {
+                columnWithOffset = column + offset - upSameSymbol;
+                rowWithOffset = row - offset + upSameSymbol;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    return false;
                 }
-                else return false;
             }
-            if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                same++;
+            else  {
+                columnWithOffset = column - offset;
+                rowWithOffset = row + offset;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    down = true;
+                    columnWithOffset = column + offset - upSameSymbol;
+                    rowWithOffset = row - offset + upSameSymbol;
+                    if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                        return false;
+                    }
+                }
             }
-            else {
-                columnWithOffset += 2*offset;
-                rowWithOffset -= 2*offset;
-                if (columnWithOffset > board.maxColumn - 1|| rowWithOffset < 0) return false;
-                if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                    same++;
+            if (isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
+                if (!down) {
+                    upSameSymbol++;
+                }
+            } else {
+                down = true;
+                columnWithOffset = column + offset - upSameSymbol;
+                rowWithOffset = row - offset + upSameSymbol;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    return false;
+                }
+                if (!isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
+                    return false;
                 }
             }
         }
-        return same == 4;
+        return true;
     }
 
     private boolean checkDiagonalDecreasing(int column, int row, char symbol) {
-        int same = 1;
-        int columnWithOffset, rowWithOffset;
+        int upSameSymbol = 0;
+        boolean up = false;
+        int columnWithOffset;
+        int rowWithOffset;
         for (int offset = 1; offset < 4; offset++) {
-            columnWithOffset = column - offset;
-            rowWithOffset = row - offset;
-            if (columnWithOffset < 0 || rowWithOffset < 0) {
-                columnWithOffset += 2*offset;
-                rowWithOffset += 2*offset;
-                if (columnWithOffset > board.maxColumn - 1 || rowWithOffset > board.maxRow - 1) return false;
-                if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                    same++;
-                    continue;
+            if (up) {
+                columnWithOffset = column - offset + upSameSymbol;
+                rowWithOffset = row - offset + upSameSymbol;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    return false;
                 }
-                else return false;
             }
-            if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                same++;
+            else  {
+                columnWithOffset = column + offset;
+                rowWithOffset = row + offset;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    up = true;
+                    columnWithOffset = column - offset + upSameSymbol;
+                    rowWithOffset = row - offset + upSameSymbol;
+                    if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                        return false;
+                    }
+                }
             }
-            else {
-                columnWithOffset += 2*offset;
-                rowWithOffset += 2*offset;
-                if (columnWithOffset > board.maxColumn-1 || rowWithOffset > board.maxRow -1) return false;
-                if (this.board.getPieceAt(columnWithOffset, rowWithOffset) == symbol) {
-                    same++;
+            if (isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
+                if (!up) {
+                    upSameSymbol++;
+                }
+            } else {
+                up = true;
+                columnWithOffset = column - offset + upSameSymbol;
+                rowWithOffset = row - offset + upSameSymbol;
+                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    return false;
+                }
+                if (!isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
+                    return false;
                 }
             }
         }
-        return same == 4;
+        return true;
+    }
+
+    public boolean checkNotInBounds(int column, int row) {
+        return column > board.maxColumn - 1 || row > board.maxRow - 1 || column < 0 || row < 0;
+    }
+    public boolean isSameSymbol(int column, int row, char symbol) {
+        return symbol == this.board.getPieceAt(column, row);
     }
 
 }

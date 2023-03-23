@@ -17,7 +17,7 @@ public class FourInLineGame implements Game {
         this.board = new FourInALineBoard(columns, rows, ' ');
         this.boardManager = new BoardManager(this.board);
         this.playersList = new FIALPlayersList(this.boardManager);
-        this.playersManager = new FIALPlayersManager(playersList);
+        this.playersManager = new FIALPlayersManager(playersList, this.board);
     }
 
     @Override
@@ -28,10 +28,13 @@ public class FourInLineGame implements Game {
             this.playersManager.executeCurrentPlayerMove();
             this.boardManager.drawBoard();
             if (this.playersManager.gameWon) {
+                InputOutput.println(playersManager.currentPlayer.getName() + " won!");
                 break;
             }
-            this.playersManager.changePlayer();
+            if (!this.playersManager.changePlayer()) {
+                InputOutput.println("The board is full. Draw!");
+                break;
+            }
         }
-        InputOutput.println(playersManager.currentPlayer.getName() + " won!");
     }
 }

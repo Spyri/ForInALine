@@ -22,8 +22,12 @@ public class HumanPlayerFIAL extends Player{
         while (!validInput){
             String message = "Please choose the row you want to place your stone: ";
             row = InputOutput.printAndScanInt(message);
-            validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
+            --row;
+            if (this.boardManager.pieceSetter.checkBoundAndRowOutput(0,row)){
+                validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
+                System.out.println("valid");
+            }
         }
-        return row - 1;
+        return row;
     }
 }

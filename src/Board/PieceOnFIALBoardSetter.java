@@ -9,20 +9,34 @@ public class PieceOnFIALBoardSetter {
     }
 
     public boolean setPieceAt(char p, int row) {
-        --row;
-        if((row < this.board.maxRow) && (row >= 0)) {
+        if (!checkBoundAndRowWithoutOutput(0, row)) {
+            return false;
+        }
+        else {
+            this.board.setPieceAt(p, this.getNextFreeColumnOfRow(row), row);
+            return true;
+        }
+
+    }
+
+
+    public boolean checkBoundAndRowWithoutOutput(int column, int row) {
+        return !this.board.checkNotInBounds(column,row) && isRowFree(row);
+    }
+
+    public boolean checkBoundAndRowOutput(int column, int row) {
+        if (this.board.checkNotInBounds(column, row)) {
+            InputOutput.println("The given row is out of bounds. Try again.");
+            return false;
+        }
+        else {
             if (isRowFree(row)) {
-                this.board.setPieceAt(p, this.getNextFreeColumnOfRow(row), row);
                 return true;
             }
             else {
                 InputOutput.println("The given row is full with pieces. Try again");
                 return false;
             }
-        }
-        else {
-            InputOutput.println("The given row is out of bounds. Try again.");
-            return false;
         }
     }
 
@@ -37,7 +51,7 @@ public class PieceOnFIALBoardSetter {
         return board.maxColumn - 1;
     }
 
-    private boolean isRowFree(int row) {
+    public boolean isRowFree(int row) {
         return this.board.getPieceAt(0, row) == ' ';
     }
 }

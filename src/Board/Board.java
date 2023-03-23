@@ -26,4 +26,12 @@ public abstract class Board {
     public int getAreaOfBoard() {
         return this.maxColumn*this.maxRow;
     }
+
+    public boolean checkNotInBounds(int column, int row) {
+        return column > this.maxColumn - 1 || row > this.maxRow - 1 || column < 0 || row < 0;
+    }
+
+    public int getMaxRow() {
+        return this.maxRow;
+    }
 }

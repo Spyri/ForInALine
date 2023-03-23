@@ -30,13 +30,13 @@ public class CheckWinFIAL {
         for (int offset = 1; offset < 4; offset++) {
             if (left) {
                 rowWithOffset = row - offset + rightSameSymbol;
-                if (checkNotInBounds(column, rowWithOffset)) {
+                if (this.board.checkNotInBounds(column, rowWithOffset)) {
                     return false;
                 }
             }
             else  {
                 rowWithOffset = row + offset;
-                if (checkNotInBounds(column, rowWithOffset)) {
+                if (this.board.checkNotInBounds(column, rowWithOffset)) {
                     left = true;
                     rowWithOffset = row - offset + rightSameSymbol;
                 }
@@ -48,7 +48,7 @@ public class CheckWinFIAL {
             } else {
                 left = true;
                 rowWithOffset = row - offset + rightSameSymbol;
-                if (checkNotInBounds(column, rowWithOffset)) {
+                if (this.board.checkNotInBounds(column, rowWithOffset)) {
                     return false;
                 }
                 if (!isSameSymbol(column, rowWithOffset, symbol)) {
@@ -66,13 +66,13 @@ public class CheckWinFIAL {
         for (int offset = 1; offset < 4; offset++) {
             if (up) {
                 columnWithOffset = column - offset + downSameSymbol;
-                if (checkNotInBounds(columnWithOffset, row)) {
+                if (this.board.checkNotInBounds(columnWithOffset, row)) {
                     return false;
                 }
             }
             else  {
                 columnWithOffset = column + offset;
-                if (checkNotInBounds(columnWithOffset, row)) {
+                if (this.board.checkNotInBounds(columnWithOffset, row)) {
                     up = true;
                     columnWithOffset = column - offset + downSameSymbol;
                 }
@@ -84,7 +84,7 @@ public class CheckWinFIAL {
             } else {
                 up = true;
                 columnWithOffset = column - offset + downSameSymbol;
-                if (checkNotInBounds(columnWithOffset, row)) {
+                if (this.board.checkNotInBounds(columnWithOffset, row)) {
                     return false;
                 }
                 if (!isSameSymbol(columnWithOffset, row, symbol)) {
@@ -106,18 +106,18 @@ public class CheckWinFIAL {
             if (down) {
                 columnWithOffset = column + offset - upSameSymbol;
                 rowWithOffset = row - offset + upSameSymbol;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     return false;
                 }
             }
             else  {
                 columnWithOffset = column - offset;
                 rowWithOffset = row + offset;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     down = true;
                     columnWithOffset = column + offset - upSameSymbol;
                     rowWithOffset = row - offset + upSameSymbol;
-                    if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                         return false;
                     }
                 }
@@ -130,7 +130,7 @@ public class CheckWinFIAL {
                 down = true;
                 columnWithOffset = column + offset - upSameSymbol;
                 rowWithOffset = row - offset + upSameSymbol;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     return false;
                 }
                 if (!isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
@@ -150,18 +150,18 @@ public class CheckWinFIAL {
             if (up) {
                 columnWithOffset = column - offset + upSameSymbol;
                 rowWithOffset = row - offset + upSameSymbol;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     return false;
                 }
             }
             else  {
                 columnWithOffset = column + offset;
                 rowWithOffset = row + offset;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     up = true;
                     columnWithOffset = column - offset + upSameSymbol;
                     rowWithOffset = row - offset + upSameSymbol;
-                    if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                    if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                         return false;
                     }
                 }
@@ -174,7 +174,7 @@ public class CheckWinFIAL {
                 up = true;
                 columnWithOffset = column - offset + upSameSymbol;
                 rowWithOffset = row - offset + upSameSymbol;
-                if (checkNotInBounds(columnWithOffset, rowWithOffset)) {
+                if (this.board.checkNotInBounds(columnWithOffset, rowWithOffset)) {
                     return false;
                 }
                 if (!isSameSymbol(columnWithOffset, rowWithOffset, symbol)) {
@@ -185,9 +185,6 @@ public class CheckWinFIAL {
         return true;
     }
 
-    public boolean checkNotInBounds(int column, int row) {
-        return column > board.maxColumn - 1 || row > board.maxRow - 1 || column < 0 || row < 0;
-    }
     public boolean isSameSymbol(int column, int row, char symbol) {
         return symbol == this.board.getPieceAt(column, row);
     }

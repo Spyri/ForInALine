@@ -8,6 +8,8 @@ public class FourInLineGame implements Game {
     public BoardManager boardManager;
     public FIALPlayersList playersList;
     public FIALPlayersManager playersManager;
+    public char multiplayerFlag = 'm';
+    public char computerPlayerFlag = 'c';
     public FourInLineGame(int columns, int rows) {
         initializeGame(columns, rows);
     }
@@ -22,6 +24,22 @@ public class FourInLineGame implements Game {
 
     @Override
     public void startGame() {
+        InputOutput.println("Welcome to the Four in a line game! Chose the game mode:");
+        InputOutput.println("m - for multiplayer");
+        InputOutput.println("c - for Computerplayer");
+        while (true) {
+            char c = InputOutput.printAndScanChar("Type in the mode you want to play: ");
+            if (c == multiplayerFlag) {
+                this.playersManager.createMultiplayerPlayers();
+                break;
+            } else if (c == computerPlayerFlag) {
+                this.playersManager.createPlayersWithComputerPlayer();
+                break;
+            }
+            else {
+                InputOutput.println("Chosen game mode not possible. Try again.");
+            }
+        }
         this.boardManager.clearBoard();
             this.boardManager.drawBoard();
         while (true) {

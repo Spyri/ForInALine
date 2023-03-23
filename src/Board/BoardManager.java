@@ -2,7 +2,7 @@ package Board;
 
 public class BoardManager {
     public Board board;
-    private final PieceOnFIALBoardSetter pieceSetter;
+    public final PieceOnFIALBoardSetter pieceSetter;
 
     public BoardManager(Board board) {
         this.board = board;
@@ -11,6 +11,14 @@ public class BoardManager {
 
     public boolean setPieceAt(char p, int row) {
         return this.pieceSetter.setPieceAt(p, row);
+    }
+
+    public boolean checkRowFree(int row) {
+        return this.pieceSetter.isRowFree(row);
+    }
+
+    public boolean checkNotInBounds(int column, int row) {
+        return this.board.checkNotInBounds(column, row);
     }
 
     public void clearBoard() {

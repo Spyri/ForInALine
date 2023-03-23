@@ -17,7 +17,6 @@ public class FIALPlayersManager {
     public FIALPlayersManager(FIALPlayersList players, Board board) {
         this.players = players;
         this.round = 0;
-        this.currentPlayer = players.players[round];
         this.checkWinFIAL = new CheckWinFIAL(board);
         this.board = board;
     }
@@ -34,5 +33,15 @@ public class FIALPlayersManager {
         }
         currentPlayer = players.players[round % 2];
         return true;
+    }
+
+    public void createMultiplayerPlayers() {
+        this.players.createMultiplayerPlayers();
+        this.currentPlayer = players.players[0];
+    }
+
+    public void createPlayersWithComputerPlayer() {
+        this.players.createComputerPlayerGamePlayers();
+        this.currentPlayer = players.players[0];
     }
 }

@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Refactored directory structure">
+    <list default="true" id="a03b8bc3-f66a-445e-be65-34380e43dc5a" name="Changes" comment="Fixed CheckWin and DrawDetection. Game is ready">
+      <change afterPath="$PROJECT_DIR$/src/Players/ComputerPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board/BoardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/BoardManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board/CheckWinFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/CheckWinFIAL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board/PieceOnFIALBoardSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FIALPlayersList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/FourInLineGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/FourInLineGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/InputOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/FIALPlayersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +66,7 @@
       <workItem from="1679051165616" duration="1800000" />
       <workItem from="1679239843221" duration="19455000" />
       <workItem from="1679337134205" duration="14259000" />
-      <workItem from="1679483751590" duration="12112000" />
+      <workItem from="1679483751590" duration="20802000" />
     </task>
     <task id="LOCAL-00001" summary="Created Classes for creating a For In A Line Game">
       <created>1679050849392</created>
@@ -231,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679341921747</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixed CheckWin and DrawDetection. Game is ready">
+      <created>1679557100601</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679557100601</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +284,8 @@
     <MESSAGE value="Created the Game Logic without win check" />
     <MESSAGE value="Created InputOutput class that handles input and output requests. Refactored the code using the InputOutput methods." />
     <MESSAGE value="Refactored view and PlayersManager saves last row used." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored view and PlayersManager saves last row used." />
+    <MESSAGE value="Fixed CheckWin and DrawDetection. Game is ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed CheckWin and DrawDetection. Game is ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,10 +304,20 @@
           <line>43</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Players/FIALPlayersManager.java</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/Players/HumanPlayerFIAL.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Players/ComputerPlayer.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

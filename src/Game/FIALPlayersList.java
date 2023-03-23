@@ -2,10 +2,10 @@ package Game;
 
 import Board.BoardManager;
 import IO.InputOutput;
+import Players.ComputerPlayer;
 import Players.HumanPlayerFIAL;
 import Players.Player;
 
-import java.security.cert.TrustAnchor;
 import java.util.Scanner;
 
 public class FIALPlayersList {
@@ -17,11 +17,29 @@ public class FIALPlayersList {
 
     public FIALPlayersList(BoardManager boardManager) {
         this.boardManager = boardManager;
+    }
+
+    public void createMultiplayerPlayers() {
         InputOutput.println("--- Player 1: Please type in your name and the symbol that you want to use. ---");
         Player player1 = createHumanPlayer();
         InputOutput.println("--- Player 2: Please type in your name and the symbol that you want to use. ---");
         Player player2 = createHumanPlayer();
         this.players = new Player[]{player1, player2};
+    }
+
+    public void createComputerPlayerGamePlayers() {
+        Player botPlayer = createComputerPlayer();
+        InputOutput.println("--- Player 1: Please type in your name and the symbol that you want to use. ---");
+        Player player1 = createHumanPlayer();
+        this.players = new Player[]{player1, botPlayer};
+    }
+
+    public Player createComputerPlayer() {
+        char botSymbol = 'B';
+        String botName = "bot";
+        this.alreadyChosenName = botName;
+        this.alreadyChosenSymbol = botSymbol;
+        return new ComputerPlayer(botName, botSymbol, this.boardManager);
     }
 
     public Player createHumanPlayer() {

@@ -41,6 +41,23 @@ public class InputOutput {
         return result;
     }
 
+    public static char printAndScanChar(String message) {
+        Scanner scanner = new Scanner(System.in);
+        char chosenChar;
+        while (true) {
+            System.out.print(message);
+            String c = scanner.next();
+            if (c.length() == 1) {
+                chosenChar = c.charAt(0);
+                return chosenChar;
+            }
+            else {
+                System.out.println("Input is invalid. Try again");
+            }
+
+        }
+    }
+
     public static char printAndScanCharAndCompareWith(String message, char charToCompare) {
         Scanner scanner = new Scanner(System.in);
         char chosenChar;

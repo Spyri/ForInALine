@@ -25,7 +25,6 @@ public class HumanPlayerFIAL extends Player{
             --row;
             if (this.boardManager.pieceSetter.checkBoundAndRowOutput(0,row)){
                 validInput = this.boardManager.setPieceAt(this.pieceSymbol, row);
-                System.out.println("valid");
             }
         }
         return row;
